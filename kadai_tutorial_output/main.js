@@ -44,7 +44,7 @@ const keyPress = (e) =>{
         wrap.classList.add('mistyped');
         setTimeout(() =>{
             wrap.classList.remove('mistyped');
-        }, 1000);
+        }, 100);
 
         return;
     };
@@ -95,7 +95,7 @@ const timer = () =>{
     if(time <= 0){
        gameOver(id);
     }
-  },100);
+  },1000);
 };
 
 
