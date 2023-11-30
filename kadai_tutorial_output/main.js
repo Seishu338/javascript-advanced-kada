@@ -44,7 +44,7 @@ const keyPress = (e) =>{
         wrap.classList.add('mistyped');
         setTimeout(() =>{
             wrap.classList.remove('mistyped');
-        }, 100);
+        }, 1000);
 
         return;
     };
