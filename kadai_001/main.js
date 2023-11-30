@@ -55,14 +55,12 @@ const keyPress = (e) =>{
     untyped = untyped.substring(1);
     typedfield.textContent = typed;
     untypedfield.textContent = untyped;
-    let typeLength = typed.length;
+    let typeLength = score;
     not.textContent = typeLength;
 
 
     if(untyped === ''){
         createText();
-        typeLength = '';
-        not.textContent = typeLength;
     }
 };
 
