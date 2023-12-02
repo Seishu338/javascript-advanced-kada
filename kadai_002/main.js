@@ -79,10 +79,16 @@ const rankCheck = (s) =>{
 
 const gameOver = (i) =>{
     clearInterval(i);
-    const result =confirm(rankCheck(score));
-    if(result == true){
-        window.location.reload();
-    }
+    wrap.textContent ='タイムアップ!'
+
+    setTimeout(()=>{
+        const result =confirm(rankCheck(score));
+        if(result == true){
+            window.location.reload();
+        }
+    }, 10);
+
+
 };
 
 const timer = () =>{
@@ -109,9 +115,7 @@ start.addEventListener('click',() =>{
 
     document.addEventListener('keypress',keyPress);
 
-    setTimeout(()=>{
-        wrap.textContent ='タイムアップ!';
-    }, 59900);
 });
 
 untypedfield.textContent = 'スタートボタンで開始';
+
